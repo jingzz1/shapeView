@@ -1,9 +1,9 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'maven'
     id 'com.github.dcendents.android-maven'
 }
-group='https://gitee.com/jingzz'
 
 android {
     compileSdk 31
