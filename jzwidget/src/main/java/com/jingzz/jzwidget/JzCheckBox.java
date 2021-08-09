@@ -15,15 +15,15 @@ import com.jingzz.jzwidget.iface.RHelper;
  *
  * @author ZhongDaFeng
  */
-public class RCheckBox extends AppCompatCheckBox implements RHelper<RCheckHelper> {
+public class JzCheckBox extends AppCompatCheckBox implements RHelper<RCheckHelper> {
 
     private RCheckHelper mHelper;
 
-    public RCheckBox(Context context) {
+    public JzCheckBox(Context context) {
         this(context, null);
     }
 
-    public RCheckBox(Context context, AttributeSet attrs) {
+    public JzCheckBox(Context context, AttributeSet attrs) {
         super(context, attrs);
         mHelper = new RCheckHelper(context, this, attrs);
     }

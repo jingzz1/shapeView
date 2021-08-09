@@ -13,19 +13,19 @@ import com.jingzz.jzwidget.iface.RHelper;
  *
  * @author ZhongDaFeng
  */
-public class RFrameLayout extends FrameLayout implements RHelper<RBaseHelper> {
+public class JzFrameLayout extends FrameLayout implements RHelper<RBaseHelper> {
 
     private RBaseHelper mHelper;
 
-    public RFrameLayout(Context context) {
+    public JzFrameLayout(Context context) {
         this(context, null);
     }
 
-    public RFrameLayout(Context context, AttributeSet attrs) {
+    public JzFrameLayout(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public RFrameLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public JzFrameLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mHelper = new RBaseHelper(context, this, attrs);
     }

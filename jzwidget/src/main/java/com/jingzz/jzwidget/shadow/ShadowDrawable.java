@@ -34,7 +34,7 @@ public class ShadowDrawable extends Drawable {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
     }
 
-    public void updateParameter(int shadowColor, float shadowRadius, int shadowDx, int shadowDy, float[] roundRadii) {
+    public void updateParameter(int shadowColor,int shadowAlpha, float shadowRadius, int shadowDx, int shadowDy, float[] roundRadii) {
         this.mShadowColor = shadowColor;
         this.mRoundRadii = roundRadii;
         this.mShadowRadius = shadowRadius;
@@ -45,6 +45,7 @@ public class ShadowDrawable extends Drawable {
          */
         mPaint.setColor(mShadowColor);
         mPaint.setShadowLayer(mShadowRadius, mShadowDx, mShadowDy, mShadowColor);
+        mPaint.setAlpha(shadowAlpha);
     }
 
     @Override

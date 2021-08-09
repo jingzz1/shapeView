@@ -7,7 +7,6 @@ import android.view.MotionEvent;
 
 import androidx.appcompat.widget.AppCompatRadioButton;
 
-import com.jingzz.jzwidget.helper.RBaseHelper;
 import com.jingzz.jzwidget.helper.RCheckHelper;
 import com.jingzz.jzwidget.iface.RHelper;
 
@@ -16,15 +15,15 @@ import com.jingzz.jzwidget.iface.RHelper;
  *
  * @author ZhongDaFeng
  */
-public class RRadioButton extends AppCompatRadioButton implements RHelper<RCheckHelper> {
+public class JzRadioButton extends AppCompatRadioButton implements RHelper<RCheckHelper> {
 
     private RCheckHelper mHelper;
 
-    public RRadioButton(Context context) {
+    public JzRadioButton(Context context) {
         this(context, null);
     }
 
-    public RRadioButton(Context context, AttributeSet attrs) {
+    public JzRadioButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         mHelper = new RCheckHelper(context, this, attrs);
     }

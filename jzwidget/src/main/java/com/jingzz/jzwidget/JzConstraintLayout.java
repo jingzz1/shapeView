@@ -14,19 +14,19 @@ import com.jingzz.jzwidget.iface.RHelper;
  *
  * @author ZhongDaFeng
  */
-public class RConstraintLayout extends ConstraintLayout implements RHelper<RBaseHelper> {
+public class JzConstraintLayout extends ConstraintLayout implements RHelper<RBaseHelper> {
 
     private RBaseHelper mHelper;
 
-    public RConstraintLayout(Context context) {
+    public JzConstraintLayout(Context context) {
         this(context, null);
     }
 
-    public RConstraintLayout(Context context, AttributeSet attrs) {
+    public JzConstraintLayout(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public RConstraintLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public JzConstraintLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mHelper = new RBaseHelper(context, this, attrs);
     }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,5 +7,44 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <com.jingzz.jzwidget.JzFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="8dp"
+        app:jz_background_normal="@color/purple_500"
+        app:jz_border_color_normal="@color/black"
+        app:jz_border_dash_gap="3dp"
+        app:jz_border_dash_width="4dp"
+        app:jz_border_width_normal="4dp"
+        app:jz_clip_layout="true"
+        app:jz_corner_radius="16dp"
+        app:jz_shadow_color="@color/purple_200"
+        app:jz_shadow_dx="3dp"
+        app:jz_shadow_dy="3dp"
+        app:jz_shadow_radius="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="77777777"
+            android:textColor="@color/white" />
+
+    </com.jingzz.jzwidget.JzFrameLayout>
+
+    <com.jingzz.jzwidget.JzTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="66666"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        app:jz_background_normal="@color/purple_500"
+        app:jz_corner_radius="13dp" />
+
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/purple_200"
+        android:checked="true" />
 
 </LinearLayout>

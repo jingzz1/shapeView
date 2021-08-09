@@ -3,29 +3,29 @@ package com.jingzz.jzwidget;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.jingzz.jzwidget.helper.RBaseHelper;
 import com.jingzz.jzwidget.iface.RHelper;
 
 /**
- * RLinearLayout
+ * RRelativeLayout
  *
  * @author ZhongDaFeng
  */
-public class RLinearLayout extends LinearLayout implements RHelper<RBaseHelper> {
+public class JzRelativeLayout extends RelativeLayout implements RHelper<RBaseHelper> {
 
     private RBaseHelper mHelper;
 
-    public RLinearLayout(Context context) {
+    public JzRelativeLayout(Context context) {
         this(context, null);
     }
 
-    public RLinearLayout(Context context, AttributeSet attrs) {
+    public JzRelativeLayout(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public RLinearLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public JzRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mHelper = new RBaseHelper(context, this, attrs);
     }

@@ -1,28 +1,29 @@
 package com.jingzz.jzwidget;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.jingzz.jzwidget.helper.RTextViewHelper;
 import com.jingzz.jzwidget.iface.RHelper;
 
 /**
- * REditText
+ * RTextView
  *
  * @author ZhongDaFeng
  */
-public class REditText extends AppCompatEditText implements RHelper<RTextViewHelper> {
+public class JzTextView extends AppCompatTextView implements RHelper<RTextViewHelper> {
 
     private RTextViewHelper mHelper;
 
-    public REditText(Context context) {
+    public JzTextView(Context context) {
         this(context, null);
     }
 
-    public REditText(Context context, AttributeSet attrs) {
+    public JzTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mHelper = new RTextViewHelper(context, this, attrs);
     }
@@ -50,4 +51,9 @@ public class REditText extends AppCompatEditText implements RHelper<RTextViewHel
         super.setSelected(selected);
     }
 
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        if (mHelper != null) mHelper.drawIconWithText();
+    }
 }

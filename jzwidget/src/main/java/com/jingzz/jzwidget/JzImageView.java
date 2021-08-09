@@ -25,7 +25,7 @@ import androidx.appcompat.widget.AppCompatImageView;
  *
  * @author ZhongDaFeng
  */
-public class RImageView extends AppCompatImageView {
+public class JzImageView extends AppCompatImageView {
 
     //圆角
     private float mCorner = -1;
@@ -48,11 +48,11 @@ public class RImageView extends AppCompatImageView {
     private ColorFilter mColorFilter;
     private PorterDuff.Mode mTintMode = PorterDuff.Mode.SRC_ATOP;
 
-    public RImageView(Context context) {
+    public JzImageView(Context context) {
         this(context, null);
     }
 
-    public RImageView(Context context, @Nullable AttributeSet attrs) {
+    public JzImageView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         initAttributeSet(attrs);
     }
@@ -63,16 +63,16 @@ public class RImageView extends AppCompatImageView {
      * @param attrs
      */
     private void initAttributeSet(AttributeSet attrs) {
-        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.RImageView);
-        mIsCircle = a.getBoolean(R.styleable.RImageView_is_circle, false);
-        mCorner = a.getDimensionPixelSize(R.styleable.RImageView_corner_radius, -1);
-        mCornerTopLeft = a.getDimensionPixelSize(R.styleable.RImageView_corner_radius_top_left, 0);
-        mCornerTopRight = a.getDimensionPixelSize(R.styleable.RImageView_corner_radius_top_right, 0);
-        mCornerBottomLeft = a.getDimensionPixelSize(R.styleable.RImageView_corner_radius_bottom_left, 0);
-        mCornerBottomRight = a.getDimensionPixelSize(R.styleable.RImageView_corner_radius_bottom_right, 0);
-        mBorderWidth = a.getDimensionPixelSize(R.styleable.RImageView_border_width, 0);
-        mBorderColor = a.getColor(R.styleable.RImageView_border_color, Color.BLACK);
-        default_color = a.getColor(R.styleable.RImageView_default_color,default_color);
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.JzImageView);
+        mIsCircle = a.getBoolean(R.styleable.JzImageView_jz_is_circle, false);
+        mCorner = a.getDimensionPixelSize(R.styleable.JzImageView_jz_corner_radius, -1);
+        mCornerTopLeft = a.getDimensionPixelSize(R.styleable.JzImageView_jz_corner_radius_top_left, 0);
+        mCornerTopRight = a.getDimensionPixelSize(R.styleable.JzImageView_jz_corner_radius_top_right, 0);
+        mCornerBottomLeft = a.getDimensionPixelSize(R.styleable.JzImageView_jz_corner_radius_bottom_left, 0);
+        mCornerBottomRight = a.getDimensionPixelSize(R.styleable.JzImageView_jz_corner_radius_bottom_right, 0);
+        mBorderWidth = a.getDimensionPixelSize(R.styleable.JzImageView_jz_border_width, 0);
+        mBorderColor = a.getColor(R.styleable.JzImageView_jz_border_color, Color.BLACK);
+        default_color = a.getColor(R.styleable.JzImageView_jz_default_color,default_color);
         //get system attrs
         String namespace = "http://schemas.android.com/apk/res/android";//android的命名空间
         int tintColor = attrs.getAttributeResourceValue(namespace, "tint", 0);
@@ -200,7 +200,7 @@ public class RImageView extends AppCompatImageView {
         }
     }
 
-    public RImageView isCircle(boolean isCircle) {
+    public JzImageView isCircle(boolean isCircle) {
         this.mIsCircle = isCircle;
         updateDrawableAttrs();
         return this;
@@ -213,7 +213,7 @@ public class RImageView extends AppCompatImageView {
         return mBorderWidth;
     }
 
-    public RImageView setBorderWidth(int borderWidth) {
+    public JzImageView setBorderWidth(int borderWidth) {
         this.mBorderWidth = borderWidth;
         updateDrawableAttrs();
         return this;
@@ -223,7 +223,7 @@ public class RImageView extends AppCompatImageView {
         return mBorderColor;
     }
 
-    public RImageView setBorderColor(@ColorInt int borderColor) {
+    public JzImageView setBorderColor(@ColorInt int borderColor) {
         this.mBorderColor = borderColor;
         updateDrawableAttrs();
         return this;
@@ -236,7 +236,7 @@ public class RImageView extends AppCompatImageView {
         return mCorner;
     }
 
-    public RImageView setCorner(float corner) {
+    public JzImageView setCorner(float corner) {
         this.mCorner = corner;
         updateDrawableAttrs();
         return this;
@@ -246,7 +246,7 @@ public class RImageView extends AppCompatImageView {
         return mCornerTopLeft;
     }
 
-    public RImageView setCornerTopLeft(float cornerTopLeft) {
+    public JzImageView setCornerTopLeft(float cornerTopLeft) {
         this.mCorner = -1;
         this.mCornerTopLeft = cornerTopLeft;
         updateDrawableAttrs();
@@ -257,7 +257,7 @@ public class RImageView extends AppCompatImageView {
         return mCornerTopRight;
     }
 
-    public RImageView setCornerTopRight(float cornerTopRight) {
+    public JzImageView setCornerTopRight(float cornerTopRight) {
         this.mCorner = -1;
         this.mCornerTopRight = cornerTopRight;
         updateDrawableAttrs();
@@ -268,7 +268,7 @@ public class RImageView extends AppCompatImageView {
         return mCornerBottomLeft;
     }
 
-    public RImageView setCornerBottomLeft(float cornerBottomLeft) {
+    public JzImageView setCornerBottomLeft(float cornerBottomLeft) {
         this.mCorner = -1;
         this.mCornerBottomLeft = cornerBottomLeft;
         updateDrawableAttrs();
@@ -279,14 +279,14 @@ public class RImageView extends AppCompatImageView {
         return mCornerBottomRight;
     }
 
-    public RImageView setCornerBottomRight(float cornerBottomRight) {
+    public JzImageView setCornerBottomRight(float cornerBottomRight) {
         this.mCorner = -1;
         this.mCornerBottomRight = cornerBottomRight;
         updateDrawableAttrs();
         return this;
     }
 
-    public RImageView setCorner(float topLeft, float topRight, float bottomRight, float bottomLeft) {
+    public JzImageView setCorner(float topLeft, float topRight, float bottomRight, float bottomLeft) {
         this.mCorner = -1;
         this.mCornerTopLeft = topLeft;
         this.mCornerTopRight = topRight;

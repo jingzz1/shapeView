@@ -12,20 +12,20 @@ import com.jingzz.jzwidget.iface.RHelper;
  *
  * @author ZhongDaFeng
  */
-public class RView extends View implements RHelper<RBaseHelper> {
+public class JzView extends View implements RHelper<RBaseHelper> {
 
 
     private RBaseHelper mHelper;
 
-    public RView(Context context) {
+    public JzView(Context context) {
         this(context, null);
     }
 
-    public RView(Context context, AttributeSet attrs) {
+    public JzView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public RView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public JzView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mHelper = new RBaseHelper(context, this, attrs);
     }
