@@ -5,46 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#f1f1f1">
 
-    <com.jingzz.jzwidget.JzFrameLayout
+    <com.jingzz.jzwidget.widget.ShapeEditText
+        android:id="@+id/text2"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shape_backgroundColor="@color/teal_700"
+        app:shape_focused_backgroundColor="@color/purple_500"
+        android:drawableLeft="@mipmap/img"
+        app:shape_drawableLeft_height="24dp"
+        app:shape_drawableLeft_width="24dp"
+        android:paddingStart="16dp"
+        android:drawablePadding="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.jingzz.jzwidget.widget.ShapeLinearLayout
+        android:layout_width="100dp"
         android:layout_height="100dp"
-        android:padding="8dp"
-        app:jz_background_normal="@color/purple_500"
-        app:jz_border_color_normal="@color/black"
-        app:jz_border_dash_gap="3dp"
-        app:jz_border_dash_width="4dp"
-        app:jz_border_width_normal="4dp"
-        app:jz_clip_layout="true"
-        app:jz_corner_radius="16dp"
-        app:jz_shadow_color="@color/purple_200"
-        app:jz_shadow_dx="3dp"
-        app:jz_shadow_dy="3dp"
-        app:jz_shadow_radius="4dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="77777777"
-            android:textColor="@color/white" />
-
-    </com.jingzz.jzwidget.JzFrameLayout>
-
-    <com.jingzz.jzwidget.JzTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="66666"
-        android:padding="3dp"
-        android:textColor="@color/white"
-        app:jz_background_normal="@color/purple_500"
-        app:jz_corner_radius="13dp" />
+        app:shape_backgroundColor="@color/purple_500"
+        app:shape_radius="16dp"/>
 
 
-    <com.google.android.material.checkbox.MaterialCheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/purple_200"
-        android:checked="true" />
+    <com.jingzz.jzwidget.widget.ShapeView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:shape_isOver="true"
+        app:shape_backgroundColor="@color/design_default_color_error"
+        app:shape_strokeWidth="4dp"
+        app:shape_strokeColor="@color/white"
+        app:shape_topLeftRadius="8dp"
+        app:shape_topRightRadius="16dp"
+        app:shape_bottomLeftRadius="24dp"
+        app:shape_shadowSize="8dp"
+        app:shape_shadowColor="@color/teal_700"/>
+
 
 </LinearLayout>

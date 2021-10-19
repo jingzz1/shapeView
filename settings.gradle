@@ -1,4 +1,4 @@
 
 rootProject.name = "jzWidget"
 include ':app'
-include ':jzwidget'
+include ':shapeView'

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="shape_shadowSize" format="dimension"/>
+    <attr name="shape_shadowColor" format="color"/>
+    <attr name="shape_shadowDx" format="dimension"/>
+    <attr name="shape_shadowDy" format="dimension"/>
+    <attr name="shape_shadowAlpha" format="integer"/>
+
+    <attr name="shape_radius" format="dimension"/>
+    <attr name="shape_topLeftRadius" format="dimension"/>
+    <attr name="shape_topRightRadius" format="dimension"/>
+    <attr name="shape_bottomLeftRadius" format="dimension"/>
+    <attr name="shape_bottomRightRadius" format="dimension"/>
+    <attr name="shape_isOver" format="boolean"/>
+
+    <attr name="shape_backgroundColor" format="color"/>
+    <attr name="shape_strokeWidth" format="dimension"/>
+    <attr name="shape_strokeColor" format="color"/>
+    <attr name="shape_strokeDash" format="dimension"/>
+    <attr name="shape_strokeGap" format="dimension"/>
+
+    <attr name="shape_focused_backgroundColor" format="color"/>
+    <attr name="shape_focused_strokeWidth" format="dimension"/>
+    <attr name="shape_focused_strokeColor" format="color"/>
+    <attr name="shape_focused_strokeDash" format="dimension"/>
+    <attr name="shape_focused_strokeGap" format="dimension"/>
+
+    <attr name="shape_checked_backgroundColor" format="color"/>
+    <attr name="shape_checked_strokeWidth" format="dimension"/>
+    <attr name="shape_checked_strokeColor" format="color"/>
+    <attr name="shape_checked_strokeDash" format="dimension"/>
+    <attr name="shape_checked_strokeGap" format="dimension"/>
+
+    <attr name="shape_selected_backgroundColor" format="color"/>
+    <attr name="shape_selected_strokeWidth" format="dimension"/>
+    <attr name="shape_selected_strokeColor" format="color"/>
+    <attr name="shape_selected_strokeDash" format="dimension"/>
+    <attr name="shape_selected_strokeGap" format="dimension"/>
+
+    <attr name="shape_unEnabled_backgroundColor" format="color"/>
+    <attr name="shape_unEnabled_strokeWidth" format="dimension"/>
+    <attr name="shape_unEnabled_strokeColor" format="color"/>
+    <attr name="shape_unEnabled_strokeDash" format="dimension"/>
+    <attr name="shape_unEnabled_strokeGap" format="dimension"/>
+
+    <attr name="shape_rippleColor" format="color"/>
+
+    <attr name="shape_drawableTop_width" format="dimension"/>
+    <attr name="shape_drawableTop_height" format="dimension"/>
+
+    <attr name="shape_drawableLeft_width" format="dimension"/>
+    <attr name="shape_drawableLeft_height" format="dimension"/>
+
+    <attr name="shape_drawableRight_width" format="dimension"/>
+    <attr name="shape_drawableRight_height" format="dimension"/>
+
+    <attr name="shape_drawableBottom_width" format="dimension"/>
+    <attr name="shape_drawableBottom_height" format="dimension"/>
+
+    <declare-styleable name="ShapeTextBase">
+        <attr name="shape_drawableTop_width"/>
+        <attr name="shape_drawableTop_height"/>
+
+        <attr name="shape_drawableLeft_width"/>
+        <attr name="shape_drawableLeft_height"/>
+
+        <attr name="shape_drawableRight_width"/>
+        <attr name="shape_drawableRight_height"/>
+
+        <attr name="shape_drawableBottom_width"/>
+        <attr name="shape_drawableBottom_height"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeBase">
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_focused_backgroundColor"/>
+        <attr name="shape_focused_strokeWidth"/>
+        <attr name="shape_focused_strokeColor"/>
+        <attr name="shape_focused_strokeDash"/>
+        <attr name="shape_focused_strokeGap"/>
+
+        <attr name="shape_checked_backgroundColor"/>
+        <attr name="shape_checked_strokeWidth"/>
+        <attr name="shape_checked_strokeColor"/>
+        <attr name="shape_checked_strokeDash"/>
+        <attr name="shape_checked_strokeGap"/>
+
+        <attr name="shape_selected_backgroundColor"/>
+        <attr name="shape_selected_strokeWidth"/>
+        <attr name="shape_selected_strokeColor"/>
+        <attr name="shape_selected_strokeDash"/>
+        <attr name="shape_selected_strokeGap"/>
+
+        <attr name="shape_unEnabled_backgroundColor"/>
+        <attr name="shape_unEnabled_strokeWidth"/>
+        <attr name="shape_unEnabled_strokeColor"/>
+        <attr name="shape_unEnabled_strokeDash"/>
+        <attr name="shape_unEnabled_strokeGap"/>
+
+        <attr name="shape_rippleColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeView">
+
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_rippleColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeLinearLayout">
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_rippleColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeRelativeLayout">
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_rippleColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeFrameLayout">
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_rippleColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeConstraintLayout">
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_rippleColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeTextView">
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_unEnabled_backgroundColor"/>
+        <attr name="shape_unEnabled_strokeWidth"/>
+        <attr name="shape_unEnabled_strokeColor"/>
+        <attr name="shape_unEnabled_strokeDash"/>
+        <attr name="shape_unEnabled_strokeGap"/>
+
+        <attr name="shape_rippleColor"/>
+
+        <attr name="shape_drawableTop_width"/>
+        <attr name="shape_drawableTop_height"/>
+
+        <attr name="shape_drawableLeft_width"/>
+        <attr name="shape_drawableLeft_height"/>
+
+        <attr name="shape_drawableRight_width"/>
+        <attr name="shape_drawableRight_height"/>
+
+        <attr name="shape_drawableBottom_width"/>
+        <attr name="shape_drawableBottom_height"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeButton">
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_unEnabled_backgroundColor"/>
+        <attr name="shape_unEnabled_strokeWidth"/>
+        <attr name="shape_unEnabled_strokeColor"/>
+        <attr name="shape_unEnabled_strokeDash"/>
+        <attr name="shape_unEnabled_strokeGap"/>
+
+        <attr name="shape_rippleColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeCheckedTextView">
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_checked_backgroundColor"/>
+        <attr name="shape_checked_strokeWidth"/>
+        <attr name="shape_checked_strokeColor"/>
+        <attr name="shape_checked_strokeDash"/>
+        <attr name="shape_checked_strokeGap"/>
+
+        <attr name="shape_unEnabled_backgroundColor"/>
+        <attr name="shape_unEnabled_strokeWidth"/>
+        <attr name="shape_unEnabled_strokeColor"/>
+        <attr name="shape_unEnabled_strokeDash"/>
+        <attr name="shape_unEnabled_strokeGap"/>
+
+        <attr name="shape_rippleColor"/>
+
+        <attr name="shape_drawableTop_width"/>
+        <attr name="shape_drawableTop_height"/>
+
+        <attr name="shape_drawableLeft_width"/>
+        <attr name="shape_drawableLeft_height"/>
+
+        <attr name="shape_drawableRight_width"/>
+        <attr name="shape_drawableRight_height"/>
+
+        <attr name="shape_drawableBottom_width"/>
+        <attr name="shape_drawableBottom_height"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeEditText">
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+        <attr name="shape_shadowAlpha"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+
+        <attr name="shape_unEnabled_backgroundColor"/>
+        <attr name="shape_unEnabled_strokeWidth"/>
+        <attr name="shape_unEnabled_strokeColor"/>
+        <attr name="shape_unEnabled_strokeDash"/>
+        <attr name="shape_unEnabled_strokeGap"/>
+
+        <attr name="shape_focused_backgroundColor"/>
+        <attr name="shape_focused_strokeWidth"/>
+        <attr name="shape_focused_strokeColor"/>
+        <attr name="shape_focused_strokeDash"/>
+        <attr name="shape_focused_strokeGap"/>
+
+        <attr name="shape_drawableTop_width"/>
+        <attr name="shape_drawableTop_height"/>
+
+        <attr name="shape_drawableLeft_width"/>
+        <attr name="shape_drawableLeft_height"/>
+
+        <attr name="shape_drawableRight_width"/>
+        <attr name="shape_drawableRight_height"/>
+
+        <attr name="shape_drawableBottom_width"/>
+        <attr name="shape_drawableBottom_height"/>
+    </declare-styleable>
+
+</resources>
