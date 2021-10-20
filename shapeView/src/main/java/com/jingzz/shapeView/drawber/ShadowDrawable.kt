@@ -1,4 +1,4 @@
-package com.jingzz.jzwidget.drawber
+package com.jingzz.shapeView.drawber
 
 import android.graphics.*
 import android.graphics.drawable.Drawable
@@ -19,15 +19,15 @@ data class ShadowDrawable(
     private val paint: Paint = Paint(Paint.ANTI_ALIAS_FLAG or Paint.DITHER_FLAG)
 
     init {
-        paint.style = Paint.Style.FILL_AND_STROKE
+        paint.style = Paint.Style.FILL
         paint.color = shadowColor
         paint.alpha = shadowAlpha
         paint.strokeCap = Paint.Cap.ROUND
         paint.isAntiAlias = true
         paint.strokeJoin = Paint.Join.MITER
         paint.isDither = false
-        paint.pathEffect = CornerPathEffect(0f)
-        paint.setShadowLayer(shadowRadius, shadowDx, shadowDx, shadowColor)
+        paint.setShadowLayer(shadowRadius/5*4, shadowDx, shadowDy, shadowColor)
+//        paint.setMaskFilter(BlurMaskFilter(2f,BlurMaskFilter.Blur.OUTER))
     }
 
     override fun draw(canvas: Canvas) {

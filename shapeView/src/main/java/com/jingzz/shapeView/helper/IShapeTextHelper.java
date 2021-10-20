@@ -1,4 +1,4 @@
-package com.jingzz.jzwidget.helper;
+package com.jingzz.shapeView.helper;
 
 import android.view.MotionEvent;
 

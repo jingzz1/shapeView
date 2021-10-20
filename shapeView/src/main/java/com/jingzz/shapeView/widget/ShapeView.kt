@@ -1,10 +1,10 @@
-package com.jingzz.jzwidget.widget
+package com.jingzz.shapeView.widget
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
-import com.jingzz.jzwidget.helper.IShapeHelper
-import com.jingzz.jzwidget.helper.ShapeHelper
+import com.jingzz.shapeView.helper.IShapeHelper
+import com.jingzz.shapeView.helper.ShapeHelper
 
 class ShapeView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0,

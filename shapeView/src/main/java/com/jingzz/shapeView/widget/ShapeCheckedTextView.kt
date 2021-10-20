@@ -1,9 +1,9 @@
-package com.jingzz.jzwidget.widget
+package com.jingzz.shapeView.widget
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
-import com.jingzz.jzwidget.helper.*
+import com.jingzz.shapeView.helper.*
 
 class ShapeCheckedTextView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null,

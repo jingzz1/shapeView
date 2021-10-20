@@ -1,4 +1,4 @@
-package com.jingzz.jzwidget.widget
+package com.jingzz.shapeView.widget
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,8 +6,8 @@ import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.jingzz.jzwidget.helper.IShapeHelper
-import com.jingzz.jzwidget.helper.ShapeHelper
+import com.jingzz.shapeView.helper.IShapeHelper
+import com.jingzz.shapeView.helper.ShapeHelper
 
 class ShapeLinearLayout @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null,

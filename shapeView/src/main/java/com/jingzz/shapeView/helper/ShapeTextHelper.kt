@@ -1,11 +1,11 @@
-package com.jingzz.jzwidget.helper
+package com.jingzz.shapeView.helper
 
 import android.content.Context
 import android.graphics.Region
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.widget.TextView
-import com.jingzz.jzwidget.R
+import com.jingzz.shapeView.R
 
 class ShapeTextHelper:IShapeTextHelper {
     lateinit var view:TextView

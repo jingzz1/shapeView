@@ -1,19 +1,19 @@
-package com.jingzz.jzwidget.widget
+package com.jingzz.shapeView.widget
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
-import com.jingzz.jzwidget.helper.*
+import com.jingzz.shapeView.helper.*
 
-class ShapeEditText @JvmOverloads constructor(
+class ShapeTextView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null,
-    private val helper: ShapeHelper<ShapeEditText> = ShapeHelper(),
-    private val textHelper:ShapeTextHelper = ShapeTextHelper()
-) : androidx.appcompat.widget.AppCompatEditText(context, attrs),
-IShapeHelper<ShapeEditText> by helper,IShapeTextHelper by textHelper{
+    private val helper: ShapeHelper<ShapeTextView> = ShapeHelper(),
+    private val textHelper: ShapeTextHelper = ShapeTextHelper(),
+) : androidx.appcompat.widget.AppCompatTextView(context, attrs),
+    IShapeHelper<ShapeTextView> by helper ,IShapeTextHelper by textHelper{
     init {
         helper.view = this
-        helper.initAttributeSet(context,attrs)
+        helper.initAttributeSet(context, attrs)
         textHelper.view = this
         textHelper.initAttributeSet(context,attrs)
     }
@@ -22,9 +22,14 @@ IShapeHelper<ShapeEditText> by helper,IShapeTextHelper by textHelper{
         super.onTouchEvent(event)
         return textHelper.onTouchEvent(event)
     }
+
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
         shapeCreate()
+    }
+
+    fun setOnIconClickListener(iconClick: OnIconClickListener) {
+        textHelper.iconClick = iconClick
     }
 
     override fun shapeCreate() {
@@ -32,8 +37,5 @@ IShapeHelper<ShapeEditText> by helper,IShapeTextHelper by textHelper{
         textHelper.shapeCreate()
     }
 
-
-    fun setOnIconClickListener(iconClick: OnIconClickListener) {
-        textHelper.iconClick = iconClick
-    }
 }
+

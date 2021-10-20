@@ -1,4 +1,4 @@
-package com.jingzz.jzwidget
+package com.jingzz.shapeView
 
 import org.junit.Test
 

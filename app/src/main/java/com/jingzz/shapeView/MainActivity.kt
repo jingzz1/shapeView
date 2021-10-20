@@ -1,4 +1,4 @@
-package com.jingzz.jzwidget
+package com.jingzz.shapeView
 
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
@@ -10,20 +10,18 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
-import com.jingzz.jzwidget.helper.OnIconClickListener
-import com.jingzz.jzwidget.widget.ShapeEditText
-import com.jingzz.jzwidget.widget.ShapeTextView
+import com.jingzz.shapeView.databinding.ActivityMainBinding
+import com.jingzz.shapeView.helper.OnIconClickListener
+import com.jingzz.shapeView.widget.ShapeEditText
 
 class MainActivity : AppCompatActivity() {
+    val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val tv = findViewById<ShapeEditText>(R.id.text2)
-        tv.setOnIconClickListener(object : OnIconClickListener {
-            override fun click(view: TextView, clickType: Int) {
-                Log.e("clickType-->",clickType.toString())
-            }
-        })
+        setContentView(binding.root)
+        binding.check.setOnClickListener {
+            binding.check.isChecked = !binding.check.isChecked
+        }
     }
 }
 

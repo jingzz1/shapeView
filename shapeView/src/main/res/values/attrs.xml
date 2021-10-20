@@ -57,6 +57,108 @@
     <attr name="shape_drawableBottom_width" format="dimension"/>
     <attr name="shape_drawableBottom_height" format="dimension"/>
 
+    <!--Gradient相关-->
+    <attr name="shape_gradientColors" format="reference"/>
+    <attr name="shape_gradientOrientation">
+        <enum name="TOP_BOTTOM" value="0" />
+        <enum name="TR_BL" value="1" />
+        <enum name="RIGHT_LEFT" value="2" />
+        <enum name="BR_TL" value="3" />
+        <enum name="BOTTOM_TOP" value="4" />
+        <enum name="BL_TR" value="5" />
+        <enum name="LEFT_RIGHT" value="6" />
+        <enum name="TL_BR" value="7" />
+    </attr>
+    <attr name="shape_gradientType">
+        <enum name="linear" value="0" />
+        <enum name="radial" value="1" />
+        <enum name="sweep" value="2" />
+    </attr>
+    <attr name="shape_gradientRadius" format="dimension" />
+    <attr name="shape_gradientCenterX" format="float" />
+    <attr name="shape_gradientCenterY" format="float" />
+
+    <attr name="shape_focused_gradientColors" format="reference"/>
+    <attr name="shape_focused_gradientOrientation">
+        <enum name="TOP_BOTTOM" value="0" />
+        <enum name="TR_BL" value="1" />
+        <enum name="RIGHT_LEFT" value="2" />
+        <enum name="BR_TL" value="3" />
+        <enum name="BOTTOM_TOP" value="4" />
+        <enum name="BL_TR" value="5" />
+        <enum name="LEFT_RIGHT" value="6" />
+        <enum name="TL_BR" value="7" />
+    </attr>
+    <attr name="shape_focused_gradientType">
+        <enum name="linear" value="0" />
+        <enum name="radial" value="1" />
+        <enum name="sweep" value="2" />
+    </attr>
+    <attr name="shape_focused_gradientRadius" format="dimension" />
+    <attr name="shape_focused_gradientCenterX" format="float" />
+    <attr name="shape_focused_gradientCenterY" format="float" />
+
+    <attr name="shape_checked_gradientColors" format="reference"/>
+    <attr name="shape_checked_gradientOrientation">
+        <enum name="TOP_BOTTOM" value="0" />
+        <enum name="TR_BL" value="1" />
+        <enum name="RIGHT_LEFT" value="2" />
+        <enum name="BR_TL" value="3" />
+        <enum name="BOTTOM_TOP" value="4" />
+        <enum name="BL_TR" value="5" />
+        <enum name="LEFT_RIGHT" value="6" />
+        <enum name="TL_BR" value="7" />
+    </attr>
+    <attr name="shape_checked_gradientType">
+        <enum name="linear" value="0" />
+        <enum name="radial" value="1" />
+        <enum name="sweep" value="2" />
+    </attr>
+    <attr name="shape_checked_gradientRadius" format="dimension" />
+    <attr name="shape_checked_gradientCenterX" format="float" />
+    <attr name="shape_checked_gradientCenterY" format="float" />
+
+    <attr name="shape_selected_gradientColors" format="reference"/>
+    <attr name="shape_selected_gradientOrientation">
+        <enum name="TOP_BOTTOM" value="0" />
+        <enum name="TR_BL" value="1" />
+        <enum name="RIGHT_LEFT" value="2" />
+        <enum name="BR_TL" value="3" />
+        <enum name="BOTTOM_TOP" value="4" />
+        <enum name="BL_TR" value="5" />
+        <enum name="LEFT_RIGHT" value="6" />
+        <enum name="TL_BR" value="7" />
+    </attr>
+    <attr name="shape_selected_gradientType">
+        <enum name="linear" value="0" />
+        <enum name="radial" value="1" />
+        <enum name="sweep" value="2" />
+    </attr>
+    <attr name="shape_selected_gradientRadius" format="dimension" />
+    <attr name="shape_selected_gradientCenterX" format="float" />
+    <attr name="shape_selected_gradientCenterY" format="float" />
+
+    <attr name="shape_unEnabled_gradientColors" format="reference"/>
+    <attr name="shape_unEnabled_gradientOrientation">
+        <enum name="TOP_BOTTOM" value="0" />
+        <enum name="TR_BL" value="1" />
+        <enum name="RIGHT_LEFT" value="2" />
+        <enum name="BR_TL" value="3" />
+        <enum name="BOTTOM_TOP" value="4" />
+        <enum name="BL_TR" value="5" />
+        <enum name="LEFT_RIGHT" value="6" />
+        <enum name="TL_BR" value="7" />
+    </attr>
+    <attr name="shape_unEnabled_gradientType">
+        <enum name="linear" value="0" />
+        <enum name="radial" value="1" />
+        <enum name="sweep" value="2" />
+    </attr>
+    <attr name="shape_unEnabled_gradientRadius" format="dimension" />
+    <attr name="shape_unEnabled_gradientCenterX" format="float" />
+    <attr name="shape_unEnabled_gradientCenterY" format="float" />
+
+
     <declare-styleable name="ShapeTextBase">
         <attr name="shape_drawableTop_width"/>
         <attr name="shape_drawableTop_height"/>
@@ -72,6 +174,41 @@
     </declare-styleable>
 
     <declare-styleable name="ShapeBase">
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
+
+        <attr name="shape_focused_gradientColors"/>
+        <attr name="shape_focused_gradientOrientation"/>
+        <attr name="shape_focused_gradientType"/>
+        <attr name="shape_focused_gradientRadius"/>
+        <attr name="shape_focused_gradientCenterX"/>
+        <attr name="shape_focused_gradientCenterY"/>
+
+        <attr name="shape_checked_gradientColors"/>
+        <attr name="shape_checked_gradientOrientation"/>
+        <attr name="shape_checked_gradientType"/>
+        <attr name="shape_checked_gradientRadius"/>
+        <attr name="shape_checked_gradientCenterX"/>
+        <attr name="shape_checked_gradientCenterY"/>
+
+        <attr name="shape_selected_gradientColors"/>
+        <attr name="shape_selected_gradientOrientation"/>
+        <attr name="shape_selected_gradientType"/>
+        <attr name="shape_selected_gradientRadius"/>
+        <attr name="shape_selected_gradientCenterX"/>
+        <attr name="shape_selected_gradientCenterY"/>
+
+        <attr name="shape_unEnabled_gradientColors"/>
+        <attr name="shape_unEnabled_gradientOrientation"/>
+        <attr name="shape_unEnabled_gradientType"/>
+        <attr name="shape_unEnabled_gradientRadius"/>
+        <attr name="shape_unEnabled_gradientCenterX"/>
+        <attr name="shape_unEnabled_gradientCenterY"/>
+
         <attr name="shape_shadowSize"/>
         <attr name="shape_shadowColor"/>
         <attr name="shape_shadowDx"/>
@@ -120,6 +257,40 @@
     </declare-styleable>
 
     <declare-styleable name="ShapeView">
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
+
+        <attr name="shape_focused_gradientColors"/>
+        <attr name="shape_focused_gradientOrientation"/>
+        <attr name="shape_focused_gradientType"/>
+        <attr name="shape_focused_gradientRadius"/>
+        <attr name="shape_focused_gradientCenterX"/>
+        <attr name="shape_focused_gradientCenterY"/>
+
+        <attr name="shape_checked_gradientColors"/>
+        <attr name="shape_checked_gradientOrientation"/>
+        <attr name="shape_checked_gradientType"/>
+        <attr name="shape_checked_gradientRadius"/>
+        <attr name="shape_checked_gradientCenterX"/>
+        <attr name="shape_checked_gradientCenterY"/>
+
+        <attr name="shape_selected_gradientColors"/>
+        <attr name="shape_selected_gradientOrientation"/>
+        <attr name="shape_selected_gradientType"/>
+        <attr name="shape_selected_gradientRadius"/>
+        <attr name="shape_selected_gradientCenterX"/>
+        <attr name="shape_selected_gradientCenterY"/>
+
+        <attr name="shape_unEnabled_gradientColors"/>
+        <attr name="shape_unEnabled_gradientOrientation"/>
+        <attr name="shape_unEnabled_gradientType"/>
+        <attr name="shape_unEnabled_gradientRadius"/>
+        <attr name="shape_unEnabled_gradientCenterX"/>
+        <attr name="shape_unEnabled_gradientCenterY"/>
 
         <attr name="shape_shadowSize"/>
         <attr name="shape_shadowColor"/>
@@ -145,6 +316,13 @@
     </declare-styleable>
 
     <declare-styleable name="ShapeLinearLayout">
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
+
         <attr name="shape_shadowSize"/>
         <attr name="shape_shadowColor"/>
         <attr name="shape_shadowDx"/>
@@ -188,6 +366,13 @@
         <attr name="shape_strokeGap"/>
 
         <attr name="shape_rippleColor"/>
+
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
     </declare-styleable>
 
     <declare-styleable name="ShapeFrameLayout">
@@ -209,6 +394,13 @@
         <attr name="shape_strokeColor"/>
         <attr name="shape_strokeDash"/>
         <attr name="shape_strokeGap"/>
+
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
 
         <attr name="shape_rippleColor"/>
     </declare-styleable>
@@ -234,6 +426,13 @@
         <attr name="shape_strokeGap"/>
 
         <attr name="shape_rippleColor"/>
+
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
     </declare-styleable>
 
     <declare-styleable name="ShapeTextView">
@@ -276,6 +475,20 @@
         <attr name="shape_drawableBottom_width"/>
         <attr name="shape_drawableBottom_height"/>
 
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
+
+        <attr name="shape_unEnabled_gradientColors"/>
+        <attr name="shape_unEnabled_gradientOrientation"/>
+        <attr name="shape_unEnabled_gradientType"/>
+        <attr name="shape_unEnabled_gradientRadius"/>
+        <attr name="shape_unEnabled_gradientCenterX"/>
+        <attr name="shape_unEnabled_gradientCenterY"/>
+
     </declare-styleable>
 
     <declare-styleable name="ShapeButton">
@@ -305,6 +518,20 @@
         <attr name="shape_unEnabled_strokeGap"/>
 
         <attr name="shape_rippleColor"/>
+
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
+
+        <attr name="shape_unEnabled_gradientColors"/>
+        <attr name="shape_unEnabled_gradientOrientation"/>
+        <attr name="shape_unEnabled_gradientType"/>
+        <attr name="shape_unEnabled_gradientRadius"/>
+        <attr name="shape_unEnabled_gradientCenterX"/>
+        <attr name="shape_unEnabled_gradientCenterY"/>
 
     </declare-styleable>
 
@@ -353,6 +580,27 @@
 
         <attr name="shape_drawableBottom_width"/>
         <attr name="shape_drawableBottom_height"/>
+
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
+
+        <attr name="shape_checked_gradientColors"/>
+        <attr name="shape_checked_gradientOrientation"/>
+        <attr name="shape_checked_gradientType"/>
+        <attr name="shape_checked_gradientRadius"/>
+        <attr name="shape_checked_gradientCenterX"/>
+        <attr name="shape_checked_gradientCenterY"/>
+
+        <attr name="shape_unEnabled_gradientColors"/>
+        <attr name="shape_unEnabled_gradientOrientation"/>
+        <attr name="shape_unEnabled_gradientType"/>
+        <attr name="shape_unEnabled_gradientRadius"/>
+        <attr name="shape_unEnabled_gradientCenterX"/>
+        <attr name="shape_unEnabled_gradientCenterY"/>
     </declare-styleable>
 
     <declare-styleable name="ShapeEditText">
@@ -375,11 +623,19 @@
         <attr name="shape_strokeDash"/>
         <attr name="shape_strokeGap"/>
 
-        <attr name="shape_unEnabled_backgroundColor"/>
-        <attr name="shape_unEnabled_strokeWidth"/>
-        <attr name="shape_unEnabled_strokeColor"/>
-        <attr name="shape_unEnabled_strokeDash"/>
-        <attr name="shape_unEnabled_strokeGap"/>
+        <attr name="shape_gradientColors"/>
+        <attr name="shape_gradientOrientation"/>
+        <attr name="shape_gradientType"/>
+        <attr name="shape_gradientRadius"/>
+        <attr name="shape_gradientCenterX"/>
+        <attr name="shape_gradientCenterY"/>
+
+        <attr name="shape_focused_gradientColors"/>
+        <attr name="shape_focused_gradientOrientation"/>
+        <attr name="shape_focused_gradientType"/>
+        <attr name="shape_focused_gradientRadius"/>
+        <attr name="shape_focused_gradientCenterX"/>
+        <attr name="shape_focused_gradientCenterY"/>
 
         <attr name="shape_focused_backgroundColor"/>
         <attr name="shape_focused_strokeWidth"/>
