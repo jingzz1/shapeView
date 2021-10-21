@@ -1,5 +1,7 @@
 package com.jingzz.shapeView
 
+import android.app.Activity
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,9 +21,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        binding.check.setOnClickListener {
-            binding.check.isChecked = !binding.check.isChecked
+        binding.apply {
+            btn1.setOnClickListener {
+                Glide.with(btn1).load("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F1114%2F060421091316%2F210604091316-2-1200.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637385612&t=828bc045cea0a789a62cf06c640080ca").into(iv)
+            }
         }
+    }
+
+    inline fun <reified T: Activity> startActivity(){
+        startActivity(Intent(this,T::class.java))
     }
 }
 

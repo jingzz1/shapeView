@@ -656,4 +656,25 @@
         <attr name="shape_drawableBottom_height"/>
     </declare-styleable>
 
+    <declare-styleable name="ShapeImageView">
+        <attr name="shape_isOver"/>
+
+        <attr name="shape_shadowSize"/>
+        <attr name="shape_shadowColor"/>
+        <attr name="shape_shadowDx"/>
+        <attr name="shape_shadowDy"/>
+
+        <attr name="shape_radius"/>
+        <attr name="shape_topLeftRadius"/>
+        <attr name="shape_topRightRadius"/>
+        <attr name="shape_bottomLeftRadius"/>
+        <attr name="shape_bottomRightRadius"/>
+
+        <attr name="shape_backgroundColor"/>
+        <attr name="shape_strokeWidth"/>
+        <attr name="shape_strokeColor"/>
+        <attr name="shape_strokeDash"/>
+        <attr name="shape_strokeGap"/>
+    </declare-styleable>
+
 </resources>

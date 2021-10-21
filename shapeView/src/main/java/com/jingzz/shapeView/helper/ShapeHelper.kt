@@ -909,9 +909,7 @@ class ShapeHelper<T : View> : IShapeHelper<T> {
         return view
     }
 
-    override fun getShapeGradientColors(): IntArray {
-        TODO("Not yet implemented")
-    }
+    override fun getShapeGradientColors(): IntArray = gradientColors
 
     override fun getShapeGradientOrientation() = gradientOrientation
 

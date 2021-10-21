@@ -1,0 +1,11 @@
+package com.jingzz.shapeView
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class ShapeViewActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_shape_view)
+    }
+}

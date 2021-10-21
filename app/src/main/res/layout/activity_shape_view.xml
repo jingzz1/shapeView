@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ShapeViewActivity">
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_backgroundColor="@color/white"
+        app:shape_topLeftRadius="16dp"
+        app:shape_shadowSize="8dp"
+        app:shape_shadowColor="@color/orange"/>
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_backgroundColor="@color/green"
+        app:shape_topRightRadius="16dp"
+        app:shape_shadowColor="@color/orange"
+        app:shape_shadowSize="8dp"
+        app:shape_shadowDx="8dp"/>
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:shape_backgroundColor="@color/navy"
+        app:shape_bottomLeftRadius="16dp"
+        app:shape_shadowColor="@color/orange"
+        app:shape_shadowSize="8dp"
+        app:shape_shadowDy="8dp"/>
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:shape_backgroundColor="@color/red"
+        app:shape_bottomRightRadius="16dp"
+        app:shape_shadowColor="@color/orange"
+        app:shape_shadowSize="8dp"
+        app:shape_shadowDy="-8dp"
+        app:shape_shadowDx="-8dp"/>
+
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:shape_backgroundColor="@color/orange"
+        app:shape_isOver="true"
+        app:shape_shadowColor="@color/black"
+        app:shape_shadowSize="8dp"/>
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/view7"
+        app:layout_constraintStart_toEndOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:shape_backgroundColor="@color/purple"
+        app:shape_isOver="false"
+        app:shape_radius="16dp" />
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view7"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:shape_backgroundColor="@color/blue"
+        app:shape_isOver="true" />
+
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:shape_backgroundColor="@color/orange"
+        app:shape_isOver="true"
+        app:shape_strokeColor="@color/purple"
+        app:shape_strokeWidth="4dp"/>
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/view10"
+        app:layout_constraintStart_toEndOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:shape_backgroundColor="@color/yellow"
+        app:shape_isOver="false"
+        app:shape_radius="16dp"
+        app:shape_strokeColor="@color/navy"
+        app:shape_strokeWidth="4dp"
+        app:shape_shadowColor="@color/black"
+        app:shape_shadowSize="8dp"/>
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view10"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view9"
+        app:shape_backgroundColor="@color/blue"
+        app:shape_isOver="true"
+        app:shape_strokeColor="@color/orange"
+        app:shape_strokeDash="10dp"
+        app:shape_strokeGap="4dp"
+        app:shape_strokeWidth="4dp" />
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8"
+        app:shape_gradientColors="@array/rainbow_color"
+        app:shape_isOver="true"
+        app:shape_strokeColor="@color/purple"
+        app:shape_strokeWidth="4dp"/>
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/view13"
+        app:layout_constraintStart_toEndOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view11"
+        app:shape_gradientColors="@array/rainbow_color"
+        app:shape_gradientOrientation="LEFT_RIGHT"
+        app:shape_isOver="false"
+        app:shape_radius="16dp"
+        app:shape_strokeColor="@color/navy"
+        app:shape_strokeDash="10dp"
+        app:shape_strokeGap="4dp"
+        app:shape_strokeWidth="4dp" />
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view13"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view12"
+        app:shape_backgroundColor="@color/blue"
+        app:shape_gradientColors="@array/rainbow_color"
+        app:shape_gradientOrientation="TL_BR"
+        app:shape_isOver="true"
+        app:shape_strokeColor="@color/orange"
+        app:shape_strokeWidth="4dp"
+        app:shape_strokeDash="10dp"
+        app:shape_strokeGap="4dp"/>
+
+
+
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view14"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11"
+        app:shape_gradientColors="@array/rainbow_color"
+        app:shape_gradientType="radial"
+        app:shape_gradientRadius="50dp"
+        app:shape_isOver="true"
+        app:shape_strokeColor="@color/purple"
+        app:shape_strokeWidth="4dp"
+        app:shape_shadowColor="@color/orange"
+        app:shape_shadowSize="8dp"
+        app:shape_shadowDx="8dp"
+        app:shape_shadowDy="8dp"
+        app:shape_shadowAlpha="150"/>
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view15"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/view16"
+        app:layout_constraintStart_toEndOf="@+id/view11"
+        app:layout_constraintTop_toTopOf="@+id/view14"
+        app:shape_gradientCenterX="0.1"
+        app:shape_gradientCenterY="0.8"
+        app:shape_gradientColors="@array/rainbow_color"
+        app:shape_gradientRadius="50dp"
+        app:shape_gradientType="radial"
+        app:shape_isOver="false"
+        app:shape_radius="16dp"
+        app:shape_strokeColor="@color/navy"
+        app:shape_strokeDash="10dp"
+        app:shape_strokeGap="4dp"
+        app:shape_strokeWidth="4dp" />
+
+    <com.jingzz.shapeView.widget.ShapeView
+        android:id="@+id/view16"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view15"
+        app:shape_backgroundColor="@color/blue"
+        app:shape_gradientColors="@array/rainbow_color"
+        app:shape_gradientOrientation="TL_BR"
+        app:shape_gradientType="sweep"
+        app:shape_isOver="true"
+        app:shape_strokeColor="@color/orange"
+        app:shape_strokeDash="10dp"
+        app:shape_strokeGap="4dp"
+        app:shape_strokeWidth="4dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
