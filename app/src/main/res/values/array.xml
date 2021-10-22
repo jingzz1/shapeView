@@ -10,9 +10,14 @@
         <item>@color/red</item>
     </array>
 
-    <array name="rainbow_color2">
+    <array name="colors">
         <item>@color/black</item>
         <item>@color/white</item>
+    </array>
+
+    <array name="color2">
+        <item>#FFE7C9</item>
+        <item>#FFFFFF</item>
     </array>
     <array name="rainbow_color_str">
         <item>#FFF000</item>

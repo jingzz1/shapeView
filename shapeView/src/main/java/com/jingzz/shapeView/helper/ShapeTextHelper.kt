@@ -6,6 +6,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.widget.TextView
 import com.jingzz.shapeView.R
+import com.jingzz.shapeView.interfaces.OnIconClickListener
 
 class ShapeTextHelper:IShapeTextHelper {
     lateinit var view:TextView
@@ -46,12 +47,15 @@ class ShapeTextHelper:IShapeTextHelper {
 
                 val clickX = ev.x.toInt()
                 val clickY = ev.y.toInt()
+                //计算中心点
+                val x = (view.width - view.paddingStart - view.paddingEnd - (dl?.bounds?.width() ?: 0) - (dr?.bounds?.width()?:0))/2+view.paddingStart+(dl?.bounds?.width()?:0)
+                val y = view.run { height - paddingTop - paddingBottom-(dt?.bounds?.height()?:0)-(db?.bounds?.height()?:0) }/2+view.paddingTop+(dt?.bounds?.height()?:0)
 
                 if (dl != null) {
                     if ( Region(view.paddingStart,
-                            view.height/2-dl.bounds.height()/2,
+                            y-dl.bounds.height()/2,
                             view.paddingStart+dl.bounds.width(),
-                            view.height/2+dl.bounds.height()/2).contains(clickX,clickY)) {
+                            y+dl.bounds.height()/2).contains(clickX,clickY)) {
                         iconClick?.click(view, 0)
                         return true
                     }
@@ -59,9 +63,9 @@ class ShapeTextHelper:IShapeTextHelper {
 
                 if (dr != null) {
                     if (Region(view.let { it.width - it.paddingEnd - dr.bounds.width() },
-                            view.height/2-dr.bounds.height()/2,
+                            y-dr.bounds.height()/2,
                             view.let { it.width - it.paddingEnd },
-                            view.height/2+dr.bounds.height()/2).contains(clickX,clickY)) {
+                            y+dr.bounds.height()/2).contains(clickX,clickY)) {
                         iconClick?.click(view, 2)
                         return true
                     }
@@ -69,9 +73,9 @@ class ShapeTextHelper:IShapeTextHelper {
 
                 if (dt != null) {
                     if ( Region(
-                            view.width/2 - dt.bounds.centerX(),
+                            x - dt.bounds.width()/2,
                             view.paddingTop,
-                            view.width/2+ dt.bounds.centerX(),
+                            x+ dt.bounds.width()/2,
                             view.paddingTop+dt.bounds.height()
                         ).contains(clickX,clickY)) {
                         iconClick?.click(view, 1)
@@ -80,9 +84,9 @@ class ShapeTextHelper:IShapeTextHelper {
                 }
                 if (db != null) {
                     if (
-                        Region(view.width/2 - db.bounds.centerX() ,
+                        Region(x - db.bounds.centerX() ,
                             view.height - view.paddingBottom - db.bounds.height(),
-                            view.width/2+ db.bounds.centerX(),
+                            x+ db.bounds.centerX(),
                             view.height - view.paddingBottom).contains(clickX,clickY)) {
                         iconClick?.click(view, 3)
                         return true
@@ -170,10 +174,4 @@ class ShapeTextHelper:IShapeTextHelper {
     override fun getDrawableRightHeight() = drawableRightHeight
 
     override fun getDrawableBottomHeight() = drawableBottomHeight
-}
-
-
-interface OnIconClickListener {
-    //clickType:点击的图标位置 0：左边 1:上边 2:右边 3:下边
-    fun click(view: TextView, clickType: Int)
 }

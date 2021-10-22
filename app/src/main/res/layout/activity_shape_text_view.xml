@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShapeTextViewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置EditText获取焦点时的状态："
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+    <com.jingzz.shapeView.widget.ShapeEditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="15dp"
+        app:shape_backgroundColor="@color/orange"
+        app:shape_radius="23dp"
+        app:shape_focused_backgroundColor="@color/white"
+        app:shape_focused_strokeColor="@color/orange"
+        app:shape_focused_strokeWidth="2dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改EditText上下左右四个icon的大小并添加点击事件："
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.jingzz.shapeView.widget.ShapeEditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/orange"
+        android:textSize="15dp"
+        app:shape_backgroundColor="@color/white"
+        app:shape_strokeWidth="2dp"
+        app:shape_strokeColor="@color/orange"
+        app:shape_radius="23dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:drawableLeft="@mipmap/ic_launcher"
+        app:shape_drawableLeft_width="30dp"
+        app:shape_drawableLeft_height="30dp"
+        android:drawableRight="@mipmap/ic_launcher"
+        app:shape_drawableRight_height="60dp"
+        app:shape_drawableRight_width="60dp"
+        android:drawableTop="@mipmap/ic_launcher"
+        app:shape_drawableTop_height="50dp"
+        app:shape_drawableTop_width="25dp"
+        android:drawableBottom="@mipmap/ic_launcher"
+        app:shape_drawableBottom_width="50dp"
+        app:shape_drawableBottom_height="25dp"/>
+
+</LinearLayout>

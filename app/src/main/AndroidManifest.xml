@@ -13,12 +13,18 @@
         android:theme="@style/Theme.JzWidget"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ShapeTextViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShapeLayoutActivity"
+            android:exported="true" />
+        <activity
             android:name=".ShapeViewActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

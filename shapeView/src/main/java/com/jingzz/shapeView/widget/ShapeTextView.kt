@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
 import com.jingzz.shapeView.helper.*
+import com.jingzz.shapeView.interfaces.OnIconClickListener
 
 class ShapeTextView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null,
