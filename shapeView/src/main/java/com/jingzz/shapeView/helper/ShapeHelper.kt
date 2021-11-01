@@ -92,156 +92,156 @@ class ShapeHelper<T : View> : IShapeHelper<T> {
 
     fun initAttributeSet(context: Context, attrs: AttributeSet?) {
         context.obtainStyledAttributes(attrs, R.styleable.ShapeBase).apply {
-            shapeShadowSize = getDimension(R.styleable.ShapeBase_shape_shadowSize, shadowRadius)
+            shadowRadius = getDimension(R.styleable.ShapeBase_shape_shadowSize, shadowRadius)
             shadowColor = getColor(R.styleable.ShapeBase_shape_shadowColor, shadowColor)
             shadowDx = getDimension(R.styleable.ShapeBase_shape_shadowDx, shadowDx)
             shadowDy = getDimension(R.styleable.ShapeBase_shape_shadowDy, shadowDy)
-            shapeShadowAlpha = getInt(R.styleable.ShapeBase_shape_shadowAlpha, shadowAlpha)
+            shadowAlpha = getInt(R.styleable.ShapeBase_shape_shadowAlpha, shadowAlpha)
 
             setShapeRadius(getDimension(R.styleable.ShapeBase_shape_radius, 0f))
-            shapeTopLeftRadius =
+            topLeftRadius =
                 getDimension(R.styleable.ShapeBase_shape_topLeftRadius, topLeftRadius)
-            shapeTopRightRadius =
+            topRightRadius =
                 getDimension(R.styleable.ShapeBase_shape_topRightRadius, topRightRadius)
-            shapeBottomLeftRadius =
+            bottomLeftRadius =
                 getDimension(R.styleable.ShapeBase_shape_bottomLeftRadius, bottomLeftRadius)
-            shapeBottomRightRadius =
+            bottomRightRadius =
                 getDimension(R.styleable.ShapeBase_shape_bottomRightRadius, bottomRightRadius)
-            isShapeOver = getBoolean(R.styleable.ShapeBase_shape_isOver, false)
+            isOver = getBoolean(R.styleable.ShapeBase_shape_isOver, false)
 
-            shapeBackgroundColor =
+            backgroundColor =
                 getColor(R.styleable.ShapeBase_shape_backgroundColor, backgroundColor)
-            shapeStrokeColor = getColor(R.styleable.ShapeBase_shape_strokeColor, strokeColor)
-            shapeStrokeDash = getDimension(R.styleable.ShapeBase_shape_strokeDash, strokeDash)
-            shapeStrokeGap = getDimension(R.styleable.ShapeBase_shape_strokeGap, strokeGap)
-            shapeStrokeWidth =
+            strokeColor = getColor(R.styleable.ShapeBase_shape_strokeColor, strokeColor)
+            strokeDash = getDimension(R.styleable.ShapeBase_shape_strokeDash, strokeDash)
+            strokeGap = getDimension(R.styleable.ShapeBase_shape_strokeGap, strokeGap)
+            strokeWidth =
                 getDimension(R.styleable.ShapeBase_shape_strokeWidth, strokeWidth.toFloat()).toInt()
 
-            shapeFocusedBackgroundColor =
+            focused_backgroundColor =
                 getColor(R.styleable.ShapeBase_shape_focused_backgroundColor, backgroundColor)
-            shapeFocusedStrokeColor =
+            focused_strokeColor =
                 getColor(R.styleable.ShapeBase_shape_focused_strokeColor, strokeColor)
-            shapeFocusedStrokeWidth =
+            focused_strokeWidth =
                 getDimension(
                     R.styleable.ShapeBase_shape_focused_strokeWidth,
                     strokeWidth.toFloat()
                 ).toInt()
-            shapeFocusedStrokeDash =
+            focused_strokeDash =
                 getDimension(R.styleable.ShapeBase_shape_focused_strokeDash, strokeDash)
-            shapeFocusedStrokeGap =
+            focused_strokeGap =
                 getDimension(R.styleable.ShapeBase_shape_focused_strokeGap, strokeGap)
 
-            shapeCheckedBackgroundColor =
+            checked_backgroundColor =
                 getColor(R.styleable.ShapeBase_shape_checked_backgroundColor, backgroundColor)
-            shapeCheckedStrokeColor =
+            checked_strokeColor =
                 getColor(R.styleable.ShapeBase_shape_checked_strokeColor, strokeColor)
-            shapeCheckedStrokeWidth =
+            checked_strokeWidth =
                 getDimension(
                     R.styleable.ShapeBase_shape_checked_strokeWidth,
                     strokeWidth.toFloat()
                 ).toInt()
-            shapeCheckedStrokeDash =
+            checked_strokeDash =
                 getDimension(R.styleable.ShapeBase_shape_checked_strokeDash, strokeDash)
-            shapeCheckedStrokeGap =
+            checked_strokeGap =
                 getDimension(R.styleable.ShapeBase_shape_checked_strokeGap, strokeGap)
 
-            shapeSelectedBackgroundColor =
+            selected_backgroundColor =
                 getColor(R.styleable.ShapeBase_shape_selected_backgroundColor, backgroundColor)
-            shapeSelectedStrokeColor =
+            selected_strokeColor =
                 getColor(R.styleable.ShapeBase_shape_selected_strokeColor, strokeColor)
-            shapeSelectedStrokeWidth =
+            selected_strokeWidth =
                 getDimension(
                     R.styleable.ShapeBase_shape_selected_strokeWidth,
                     strokeWidth.toFloat()
                 ).toInt()
-            shapeSelectedStrokeDash =
+            selected_strokeDash =
                 getDimension(R.styleable.ShapeBase_shape_selected_strokeDash, strokeDash)
-            shapeSelectedStrokeGap =
+            selected_strokeGap =
                 getDimension(R.styleable.ShapeBase_shape_selected_strokeGap, strokeGap)
 
-            shapeUnEnabledBackgroundColor =
+            unEnabled_backgroundColor =
                 getColor(R.styleable.ShapeBase_shape_unEnabled_backgroundColor, backgroundColor)
-            shapeUnEnabledStrokeColor =
+            unEnabled_strokeColor =
                 getColor(R.styleable.ShapeBase_shape_unEnabled_strokeColor, strokeColor)
-            shapeUnEnabledStrokeWidth =
+            unEnabled_strokeWidth =
                 getDimension(
                     R.styleable.ShapeBase_shape_unEnabled_strokeWidth,
                     strokeWidth.toFloat()
                 ).toInt()
-            shapeUnEnabledStrokeDash =
+            unEnabled_strokeDash =
                 getDimension(R.styleable.ShapeBase_shape_unEnabled_strokeDash, strokeDash)
-            shapeUnEnabledStrokeGap =
+            unEnabled_strokeGap =
                 getDimension(R.styleable.ShapeBase_shape_unEnabled_strokeGap, strokeGap)
 
-            shapeRippleColor = getColor(R.styleable.ShapeBase_shape_rippleColor, rippleColor)
+            rippleColor = getColor(R.styleable.ShapeBase_shape_rippleColor, rippleColor)
 
-            shapeGradientColors =
+            gradientColors =
                 initColors(context, this, R.styleable.ShapeBase_shape_gradientColors)
-            shapeGradientOrientation =
+            gradientOrientation =
                 initGradientOrientation(this, R.styleable.ShapeBase_shape_gradientOrientation)
-            shapeGradientType = initGradientType(this, R.styleable.ShapeBase_shape_gradientType)
-            shapeGradientRadius = getDimension(R.styleable.ShapeBase_shape_gradientRadius, -1f)
-            shapeGradientCenterX = getFloat(R.styleable.ShapeBase_shape_gradientCenterX, 0.5f)
-            shapeGradientCenterY = getFloat(R.styleable.ShapeBase_shape_gradientCenterY, 0.5f)
+            gradientType = initGradientType(this, R.styleable.ShapeBase_shape_gradientType)
+            gradientRadius = getDimension(R.styleable.ShapeBase_shape_gradientRadius, -1f)
+            gradientCenterX = getFloat(R.styleable.ShapeBase_shape_gradientCenterX, 0.5f)
+            gradientCenterY = getFloat(R.styleable.ShapeBase_shape_gradientCenterY, 0.5f)
 
-            shapeFocusedGradientColors =
+            focused_gradientColors =
                 initColors(context, this, R.styleable.ShapeBase_shape_focused_gradientColors)
-            shapeFocusedGradientOrientation = initGradientOrientation(
+            focused_gradientOrientation = initGradientOrientation(
                 this,
                 R.styleable.ShapeBase_shape_focused_gradientOrientation
             )
-            shapeFocusedGradientType =
+            focused_gradientType =
                 initGradientType(this, R.styleable.ShapeBase_shape_focused_gradientType)
-            shapeFocusedGradientRadius =
+            focused_gradientRadius =
                 getDimension(R.styleable.ShapeBase_shape_focused_gradientRadius, -1f)
-            shapeFocusedGradientCenterX =
+            focused_gradientCenterX =
                 getFloat(R.styleable.ShapeBase_shape_focused_gradientCenterX, 0.5f)
-            shapeFocusedGradientCenterY =
+            focused_gradientCenterY =
                 getFloat(R.styleable.ShapeBase_shape_focused_gradientCenterY, 0.5f)
 
-            shapeCheckedGradientColors =
+            checked_gradientColors =
                 initColors(context, this, R.styleable.ShapeBase_shape_checked_gradientColors)
-            shapeCheckedGradientOrientation = initGradientOrientation(
+            checked_gradientOrientation = initGradientOrientation(
                 this,
                 R.styleable.ShapeBase_shape_checked_gradientOrientation
             )
-            shapeCheckedGradientType =
+            checked_gradientType =
                 initGradientType(this, R.styleable.ShapeBase_shape_checked_gradientType)
-            shapeCheckedGradientRadius =
+            checked_gradientRadius =
                 getDimension(R.styleable.ShapeBase_shape_checked_gradientRadius, -1f)
-            shapeCheckedGradientCenterX =
+            checked_gradientCenterX =
                 getFloat(R.styleable.ShapeBase_shape_checked_gradientCenterX, 0.5f)
-            shapeCheckedGradientCenterY =
+            checked_gradientCenterY =
                 getFloat(R.styleable.ShapeBase_shape_checked_gradientCenterY, 0.5f)
 
-            shapeSelectedGradientColors =
+            selected_gradientColors =
                 initColors(context, this, R.styleable.ShapeBase_shape_selected_gradientColors)
-            shapeSelectedGradientOrientation = initGradientOrientation(
+            selected_gradientOrientation = initGradientOrientation(
                 this,
                 R.styleable.ShapeBase_shape_selected_gradientOrientation
             )
-            shapeSelectedGradientType =
+            selected_gradientType =
                 initGradientType(this, R.styleable.ShapeBase_shape_selected_gradientType)
-            shapeSelectedGradientRadius =
+            selected_gradientRadius =
                 getDimension(R.styleable.ShapeBase_shape_selected_gradientRadius, -1f)
-            shapeSelectedGradientCenterX =
+            selected_gradientCenterX =
                 getFloat(R.styleable.ShapeBase_shape_selected_gradientCenterX, 0.5f)
-            shapeSelectedGradientCenterY =
+            selected_gradientCenterY =
                 getFloat(R.styleable.ShapeBase_shape_selected_gradientCenterY, 0.5f)
 
-            shapeUnEnabledGradientColors =
+            unEnabled_gradientColors =
                 initColors(context, this, R.styleable.ShapeBase_shape_unEnabled_gradientColors)
-            shapeUnEnabledGradientOrientation = initGradientOrientation(
+            unEnabled_gradientOrientation = initGradientOrientation(
                 this,
                 R.styleable.ShapeBase_shape_unEnabled_gradientOrientation
             )
-            shapeUnEnabledGradientType =
+            unEnabled_gradientType =
                 initGradientType(this, R.styleable.ShapeBase_shape_unEnabled_gradientType)
-            shapeUnEnabledGradientRadius =
+            unEnabled_gradientRadius =
                 getDimension(R.styleable.ShapeBase_shape_unEnabled_gradientRadius, -1f)
-            shapeUnEnabledGradientCenterX =
+            unEnabled_gradientCenterX =
                 getFloat(R.styleable.ShapeBase_shape_unEnabled_gradientCenterX, 0.5f)
-            shapeUnEnabledGradientCenterY =
+            unEnabled_gradientCenterY =
                 getFloat(R.styleable.ShapeBase_shape_unEnabled_gradientCenterY, 0.5f)
         }.recycle()
     }
@@ -297,8 +297,12 @@ class ShapeHelper<T : View> : IShapeHelper<T> {
     }
 
     override fun shapeCreate() {
+        view.background = getShapeBackDraw()
+    }
+
+    private fun getShapeBackDraw(): Drawable {
         val contentDrawable = getContentDrawble()
-        if (Color.alpha(shadowColor) == 0) view.background = contentDrawable
+        return if (Color.alpha(shadowColor) == 0) contentDrawable
         else {
             val shadowDrawable = ShadowDrawable(
                 shadowRadius,
@@ -321,7 +325,7 @@ class ShapeHelper<T : View> : IShapeHelper<T> {
                 (shadowRadius + shadowDx).toInt(),
                 (shadowRadius + shadowDy).toInt()
             )
-            view.background = layerDrawable
+            layerDrawable
         }
     }
 
@@ -388,6 +392,32 @@ class ShapeHelper<T : View> : IShapeHelper<T> {
         }
 
         stateListDrawable.apply {
+
+            addState(intArrayOf(-android.R.attr.state_enabled),
+                GradientDrawable().apply {
+                    this.shape = shape
+                    this.cornerRadii = cornerRadii
+                    if (unEnabled_gradientColors.size > 1) {
+                        colors = unEnabled_gradientColors
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                            setGradientCenter(
+                                this@ShapeHelper.unEnabled_gradientCenterX,
+                                this@ShapeHelper.unEnabled_gradientCenterY
+                            )
+                        }
+                        gradientRadius = this@ShapeHelper.unEnabled_gradientRadius
+                        gradientType = this@ShapeHelper.unEnabled_gradientType
+                        orientation = unEnabled_gradientOrientation
+                    } else
+                        setColor(if (Color.alpha(unEnabled_backgroundColor) == 0) backgroundColor else unEnabled_backgroundColor)
+                    setStroke(
+                        unEnabled_strokeWidth.run { if (this == 0) strokeWidth else this },
+                        unEnabled_strokeColor.run { if (Color.alpha(this) == 0) strokeColor else this },
+                        unEnabled_strokeDash.run { if (this == 0f) strokeDash else this },
+                        unEnabled_strokeGap.run { if (this == 0f) strokeGap else this }
+                    )
+                })
+
             addState(intArrayOf(android.R.attr.state_focused),
                 GradientDrawable().apply {
                     this.shape = shape
@@ -460,34 +490,6 @@ class ShapeHelper<T : View> : IShapeHelper<T> {
                         selected_strokeGap
                     )
                 })
-
-            unEnabled_backgroundColor = Color.RED
-
-            addState(intArrayOf(-android.R.attr.state_enabled),
-                GradientDrawable().apply {
-                    this.shape = shape
-                    this.cornerRadii = cornerRadii
-                    if (unEnabled_gradientColors.size > 1) {
-                        colors = unEnabled_gradientColors
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                            setGradientCenter(
-                                this@ShapeHelper.unEnabled_gradientCenterX,
-                                this@ShapeHelper.unEnabled_gradientCenterY
-                            )
-                        }
-                        gradientRadius = this@ShapeHelper.unEnabled_gradientRadius
-                        gradientType = this@ShapeHelper.unEnabled_gradientType
-                        orientation = unEnabled_gradientOrientation
-                    } else
-                        setColor(if (Color.alpha(unEnabled_backgroundColor) == 0) backgroundColor else unEnabled_backgroundColor)
-                    setStroke(
-                        unEnabled_strokeWidth.run { if (this == 0) strokeWidth else this },
-                        unEnabled_strokeColor.run { if (Color.alpha(this) == 0) strokeColor else this },
-                        unEnabled_strokeDash.run { if (this == 0f) strokeDash else this },
-                        unEnabled_strokeGap.run { if (this == 0f) strokeGap else this }
-                    )
-                })
-
             addState(intArrayOf(), backDrawable)
         }
         return stateListDrawable
@@ -938,7 +940,7 @@ class ShapeHelper<T : View> : IShapeHelper<T> {
 
     override fun getShapeCheckedGradientType() = checked_gradientType
 
-    override fun getShapeCheckedGradientRadius() = shapeFocusedGradientRadius
+    override fun getShapeCheckedGradientRadius() = checked_gradientRadius
 
     override fun getShapeCheckedGradientCenterX() = checked_gradientCenterX
 

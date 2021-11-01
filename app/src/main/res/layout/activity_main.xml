@@ -60,4 +60,12 @@
         app:shape_rippleColor="#44000000" />
 
 
+    <com.jingzz.shapeView.widget.ShapeImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:shape_backgroundColor="@color/yellow"
+        app:shape_isOver="true"
+        android:src="@mipmap/mv"
+        app:shape_shadowSize="4dp"/>
+
 </LinearLayout>

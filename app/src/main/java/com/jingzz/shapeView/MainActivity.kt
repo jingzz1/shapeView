@@ -2,6 +2,7 @@ package com.jingzz.shapeView
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.jingzz.shapeView.databinding.ActivityMainBinding
@@ -20,5 +21,8 @@ class MainActivity : AppCompatActivity() {
 
     inline fun <reified T : Activity> startActivity() {
         startActivity(Intent(this, T::class.java))
+    }
+    fun aaa(){
+
     }
 }

@@ -9,9 +9,9 @@ import com.jingzz.shapeView.interfaces.OnIconClickListener
 class ShapeCheckedTextView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null,
     private val helper: ShapeHelper<ShapeCheckedTextView> = ShapeHelper(),
-    private val textHelper: ShapeTextHelper = ShapeTextHelper(),
+    private val textHelper: ShapeTextHelper<ShapeCheckedTextView> = ShapeTextHelper(),
 ) : androidx.appcompat.widget.AppCompatCheckedTextView(context, attrs),
-IShapeHelper<ShapeCheckedTextView> by helper, IShapeTextHelper by textHelper{
+IShapeHelper<ShapeCheckedTextView> by helper, IShapeTextHelper<ShapeCheckedTextView> by textHelper{
     init {
         helper.view = this
         helper.initAttributeSet(context, attrs)

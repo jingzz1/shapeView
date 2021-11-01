@@ -1,6 +1,7 @@
 package com.jingzz.shapeView.helper
 
 import android.content.Context
+import android.content.res.ColorStateList
 import android.graphics.Region
 import android.util.AttributeSet
 import android.view.MotionEvent
@@ -8,8 +9,8 @@ import android.widget.TextView
 import com.jingzz.shapeView.R
 import com.jingzz.shapeView.interfaces.OnIconClickListener
 
-class ShapeTextHelper:IShapeTextHelper {
-    lateinit var view:TextView
+class ShapeTextHelper<T:TextView>:IShapeTextHelper<T> {
+    lateinit var view:T
     var iconClick: OnIconClickListener? = null
 
     private var drawableTopWidth:Int = 0
@@ -127,36 +128,44 @@ class ShapeTextHelper:IShapeTextHelper {
         view.setCompoundDrawables(dl,dt,dr,db)
     }
 
-    override fun setDrawableTopWidth(drawableTopWidth: Int) {
+    override fun setDrawableTopWidth(drawableTopWidth: Int):T {
         this.drawableTopWidth = drawableTopWidth
+        return view
     }
 
-    override fun setDrawableLeftWidth(drawableLeftWidth: Int) {
+    override fun setDrawableLeftWidth(drawableLeftWidth: Int):T {
         this.drawableLeftWidth = drawableLeftWidth
+        return view
     }
 
-    override fun setDrawableRightWidth(drawableRightWidth: Int) {
+    override fun setDrawableRightWidth(drawableRightWidth: Int):T {
         this.drawableRightWidth = drawableRightWidth
+        return view
     }
 
-    override fun setDrawableBottomWidth(drawableBottomWidth: Int) {
+    override fun setDrawableBottomWidth(drawableBottomWidth: Int):T {
         this.drawableBottomWidth = drawableBottomWidth
+        return view
     }
 
-    override fun setDrawableTopHeight(drawableTopHeight: Int) {
+    override fun setDrawableTopHeight(drawableTopHeight: Int):T {
         this.drawableTopHeight = drawableTopHeight
+        return view
     }
 
-    override fun setDrawableLeftHeight(drawableLeftHeight: Int) {
+    override fun setDrawableLeftHeight(drawableLeftHeight: Int):T {
         this.drawableLeftHeight = drawableLeftHeight
+        return view
     }
 
-    override fun setDrawableRightHeight(drawableRightHeight: Int) {
+    override fun setDrawableRightHeight(drawableRightHeight: Int):T {
         this.drawableRightHeight = drawableRightHeight
+        return view
     }
 
-    override fun setDrawableBottomHeight(drawableBottomHeight: Int) {
+    override fun setDrawableBottomHeight(drawableBottomHeight: Int):T {
         this.drawableBottomHeight = drawableBottomHeight
+        return view
     }
 
     override fun getDrawableTopWidth() = drawableTopWidth

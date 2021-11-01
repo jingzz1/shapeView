@@ -13,19 +13,18 @@ import com.jingzz.shapeView.interfaces.OnIconClickListener
 
 class ShapeEditText @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null,
-    private val helper: ShapeHelper<ShapeEditText> = ShapeHelper(),
-    private val textHelper:ShapeTextHelper = ShapeTextHelper()
+    val helper: ShapeHelper<ShapeEditText> = ShapeHelper(),
+     val textHelper:ShapeTextHelper<ShapeEditText> = ShapeTextHelper()
 ) : androidx.appcompat.widget.AppCompatEditText(context, attrs),
-IShapeHelper<ShapeEditText> by helper,IShapeTextHelper by textHelper{
-
-    private var shapeCursorColor = 0
-
+IShapeHelper<ShapeEditText> by helper,IShapeTextHelper<ShapeEditText> by textHelper{
+    private var coColor = 0
     init {
         helper.view = this
         helper.initAttributeSet(context,attrs)
         textHelper.view = this
         textHelper.initAttributeSet(context,attrs)
     }
+
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         super.onTouchEvent(event)
