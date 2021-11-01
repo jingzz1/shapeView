@@ -13,6 +13,9 @@
         android:theme="@style/Theme.JzWidget"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ShapeImageViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ShapeTextViewActivity"
             android:exported="true" />
         <activity

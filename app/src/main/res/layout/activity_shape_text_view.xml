@@ -24,14 +24,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:textSize="15dp"
-        app:shape_backgroundColor="@color/orange"
+        app:shape_backgroundColor="#f1f1f1"
         app:shape_radius="23dp"
         app:shape_focused_backgroundColor="@color/white"
         app:shape_focused_strokeColor="@color/orange"
         app:shape_focused_strokeWidth="2dp"
         android:paddingStart="25dp"
-        android:paddingEnd="25dp"
-        android:textCursorDrawable="@color/yellow"/>
+        android:paddingEnd="25dp"/>
 
     <TextView
         android:layout_width="wrap_content"

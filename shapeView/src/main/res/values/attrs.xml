@@ -1,50 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--    阴影相关-->
     <attr name="shape_shadowSize" format="dimension"/>
+<!--    阴影颜色-->
     <attr name="shape_shadowColor" format="color"/>
+<!--    阴影水平偏移量-->
     <attr name="shape_shadowDx" format="dimension"/>
+<!--    阴影垂直偏移量-->
     <attr name="shape_shadowDy" format="dimension"/>
+<!--    阴影透明度-->
     <attr name="shape_shadowAlpha" format="integer"/>
 
+<!--    圆角相关-->
     <attr name="shape_radius" format="dimension"/>
     <attr name="shape_topLeftRadius" format="dimension"/>
     <attr name="shape_topRightRadius" format="dimension"/>
     <attr name="shape_bottomLeftRadius" format="dimension"/>
     <attr name="shape_bottomRightRadius" format="dimension"/>
+<!--    是否圆形-->
     <attr name="shape_isOver" format="boolean"/>
 
+<!--    背景色和边框相关-->
+<!--    背景色-->
     <attr name="shape_backgroundColor" format="color"/>
+<!--    边框宽度-->
     <attr name="shape_strokeWidth" format="dimension"/>
+<!--    边框颜色-->
     <attr name="shape_strokeColor" format="color"/>
+<!--    曲线边框大小-->
     <attr name="shape_strokeDash" format="dimension"/>
+<!--    曲线边框距离-->
     <attr name="shape_strokeGap" format="dimension"/>
 
+    <!--    获取到焦点的背景色和边框相关-->
     <attr name="shape_focused_backgroundColor" format="color"/>
     <attr name="shape_focused_strokeWidth" format="dimension"/>
     <attr name="shape_focused_strokeColor" format="color"/>
     <attr name="shape_focused_strokeDash" format="dimension"/>
     <attr name="shape_focused_strokeGap" format="dimension"/>
 
+    <!--    选中时的背景色和边框相关-->
     <attr name="shape_checked_backgroundColor" format="color"/>
     <attr name="shape_checked_strokeWidth" format="dimension"/>
     <attr name="shape_checked_strokeColor" format="color"/>
     <attr name="shape_checked_strokeDash" format="dimension"/>
     <attr name="shape_checked_strokeGap" format="dimension"/>
 
+    <!--    控件被使用时的背景色和边框相关-->
     <attr name="shape_selected_backgroundColor" format="color"/>
     <attr name="shape_selected_strokeWidth" format="dimension"/>
     <attr name="shape_selected_strokeColor" format="color"/>
     <attr name="shape_selected_strokeDash" format="dimension"/>
     <attr name="shape_selected_strokeGap" format="dimension"/>
 
+    <!--    控件不可用时的背景色和边框相关-->
     <attr name="shape_unEnabled_backgroundColor" format="color"/>
     <attr name="shape_unEnabled_strokeWidth" format="dimension"/>
     <attr name="shape_unEnabled_strokeColor" format="color"/>
     <attr name="shape_unEnabled_strokeDash" format="dimension"/>
     <attr name="shape_unEnabled_strokeGap" format="dimension"/>
 
+<!--    波纹颜色 4.0以下则是点击颜色-->
     <attr name="shape_rippleColor" format="color"/>
 
+<!--    TextView图标相关-->
+<!--    四个方向图标长宽-->
     <attr name="shape_drawableTop_width" format="dimension"/>
     <attr name="shape_drawableTop_height" format="dimension"/>
 
@@ -57,8 +77,10 @@
     <attr name="shape_drawableBottom_width" format="dimension"/>
     <attr name="shape_drawableBottom_height" format="dimension"/>
 
-    <!--Gradient相关-->
+    <!--渐变色相关-->
+<!--    渐变颜色-->
     <attr name="shape_gradientColors" format="reference"/>
+<!--    渐变方向-->
     <attr name="shape_gradientOrientation">
         <enum name="TOP_BOTTOM" value="0" />
         <enum name="TR_BL" value="1" />
@@ -69,15 +91,19 @@
         <enum name="LEFT_RIGHT" value="6" />
         <enum name="TL_BR" value="7" />
     </attr>
+<!--    渐变类型-->
     <attr name="shape_gradientType">
         <enum name="linear" value="0" />
         <enum name="radial" value="1" />
         <enum name="sweep" value="2" />
     </attr>
+<!--    渐变大小-->
     <attr name="shape_gradientRadius" format="dimension" />
+<!--    渐变中心点-->
     <attr name="shape_gradientCenterX" format="float" />
     <attr name="shape_gradientCenterY" format="float" />
 
+<!--    各种状态的渐变-->
     <attr name="shape_focused_gradientColors" format="reference"/>
     <attr name="shape_focused_gradientOrientation">
         <enum name="TOP_BOTTOM" value="0" />

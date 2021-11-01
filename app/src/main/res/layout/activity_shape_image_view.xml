@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ShapeImageViewActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/mv"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_backgroundColor="#f1f1f1"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/teal_700"/>
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/mv"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_backgroundColor="#f1f1f1"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/teal_700"/>
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mv"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_backgroundColor="#f1f1f1"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/teal_700"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/mv"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_isOver="true"
+            app:shape_backgroundColor="#f1f1f1"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/teal_700"/>
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/mv"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_isOver="true"
+            app:shape_backgroundColor="#f1f1f1"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/teal_700"/>
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mv"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_isOver="true"
+            app:shape_backgroundColor="#f1f1f1"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/teal_700"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/mv"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_topLeftRadius="12dp"
+            app:shape_bottomLeftRadius="12dp"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/red"/>
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/mv"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            app:shape_topRightRadius="12dp"
+            app:shape_bottomRightRadius="12dp"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/orange"/>
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mv"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/purple"
+            app:shape_radius="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/mv"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_isOver="true"
+            app:shape_shadowSize="5dp"
+            app:shape_shadowColor="@color/purple"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/red"/>
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/mv"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            app:shape_shadowSize="5dp"
+            app:shape_shadowColor="@color/purple"
+            app:shape_radius="12dp"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/orange"/>
+
+        <com.jingzz.shapeView.widget.ShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mv"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="8dp"
+            app:shape_shadowSize="5dp"
+            app:shape_shadowColor="@color/purple"
+            app:shape_shadowDx="5dp"
+            app:shape_shadowDy="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_strokeWidth="2dp"
+            app:shape_strokeColor="@color/purple"
+            app:shape_radius="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

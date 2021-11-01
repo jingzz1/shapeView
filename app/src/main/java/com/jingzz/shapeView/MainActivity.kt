@@ -16,13 +16,11 @@ class MainActivity : AppCompatActivity() {
             btn1.setOnClickListener { startActivity<ShapeViewActivity>() }
             btn2.setOnClickListener { startActivity<ShapeLayoutActivity>() }
             btn3.setOnClickListener { startActivity<ShapeTextViewActivity>() }
+            btn4.setOnClickListener { startActivity<ShapeImageViewActivity>() }
         }
     }
 
     inline fun <reified T : Activity> startActivity() {
         startActivity(Intent(this, T::class.java))
-    }
-    fun aaa(){
-
     }
 }
