@@ -60,7 +60,6 @@
         app:shape_rippleColor="#44000000" />
 
     <com.jingzz.shapeView.widget.ShapeTextView
-        android:id="@+id/btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
@@ -75,6 +74,8 @@
         android:layout_marginBottom="8dp"
         app:shape_radius="8dp"
         app:shape_rippleColor="#44000000" />
+
+
 
 
 </LinearLayout>

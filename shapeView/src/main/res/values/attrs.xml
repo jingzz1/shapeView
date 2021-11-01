@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <!--    阴影相关-->
+<!--    阴影大小-->
     <attr name="shape_shadowSize" format="dimension"/>
 <!--    阴影颜色-->
     <attr name="shape_shadowColor" format="color"/>
