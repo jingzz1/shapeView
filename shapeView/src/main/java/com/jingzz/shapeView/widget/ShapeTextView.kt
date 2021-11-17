@@ -1,6 +1,7 @@
 package com.jingzz.shapeView.widget
 
 import android.content.Context
+import android.graphics.Color
 import android.util.AttributeSet
 import android.view.MotionEvent
 import com.jingzz.shapeView.helper.*
@@ -34,7 +35,8 @@ class ShapeTextView @JvmOverloads constructor(
     }
 
     override fun shapeCreate() {
-        helper.shapeCreate()
+        if(helper.getShapeBackgroundColor() != Color.TRANSPARENT)
+            helper.shapeCreate()
         textHelper.shapeCreate()
     }
 

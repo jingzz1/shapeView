@@ -36,6 +36,7 @@ IShapeHelper<ShapeEditText> by helper,IShapeTextHelper<ShapeEditText> by textHel
     }
 
     override fun shapeCreate() {
+        if(helper.getShapeBackgroundColor() != Color.TRANSPARENT)
         helper.shapeCreate()
         textHelper.shapeCreate()
     }

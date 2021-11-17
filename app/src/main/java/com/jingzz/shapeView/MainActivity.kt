@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
         binding.apply {
             btn1.setOnClickListener { startActivity<ShapeViewActivity>() }
             btn2.setOnClickListener { startActivity<ShapeLayoutActivity>() }
